@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
-    <title>Scrabblenator</title>
-  </head>
-  <body>
-    <div class="container">
-      <form class="" action="/Results" method="post">
-          <label for="user-word">Enter Scrabble Word</label>
-          <input type="text" name="user-word">
-          <button type="submit">Submit</button>
-      </form>
-    </div>
+@{
+  Layout = "_Layout";
+}
 
-  </body>
-</html>
+      <form class="" action="/Results" method="post">
+        <label class="scrabble" for="user-word">Enter Scrabble Word</label>
+        <br>
+        <input type="text" name="user-word">
+        <br>
+        <button class="btn-lg btn-warning" type="submit">Submit</button>
+      </form>
